@@ -1,0 +1,10 @@
+:root {
+  --first: #f9e2af;
+  --second: #009fbd;
+  --third: #210062;
+  --primary: #77037b;
+}
+
+* {
+  font-family: "Josefin Sans", sans-serif !important;
+}
