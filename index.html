@@ -49,9 +49,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link" aria-current="page" href="#hello">Hello</a>
-                <a class="nav-link" href="#">About</a>
+                <!-- <a class="nav-link" href="#">About</a> -->
                 <a class="nav-link" href="#my-work">My Work</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
                 <div class="vr ms-3 me-3 mt-1 text-white"></div>
                 <a
                   href="https://www.linkedin.com/in/nicolesaraceniorbe/"
@@ -79,13 +79,14 @@
 
       <section class="hero ms-5 mb-5" id="hello">
         <h2>Hi, my name is</h2>
-        <h1>Nicole Orbe</h1>
+        <h1>Nicole Orbe👋🏻</h1>
         <h3>Front-end Developer</h3>
       </section>
       <section>
         <div class="my-work" id="my-work">
-          <h2 class="cards-header text-center">react</h2>
-          <div class="grid grid-cards">
+          <h2 class="title text-center">Recent Projects</h2>
+          <!-- <h2 class="cards-header text-center">Recent Projects</h2> -->
+          <div class="grid grid-cards mt-5 mb-5">
             <div class="card">
               <div class="card-header">
                 <img
@@ -255,8 +256,8 @@
       <section class="fixed-img image-one"></section>
       <section>
         <div class="my-work-two">
-          <h2 class="cards-header text-center">Javascript</h2>
-          <div class="grid grid-cards">
+          <!-- <h2 class="cards-header text-center">Javascript</h2> -->
+          <div class="grid grid-cards mt-5 mb-5">
             <div class="card">
               <div class="card-header">
                 <img
@@ -417,35 +418,67 @@
       <section class="fixed-img image-two"></section>
     </main>
 
-    <footer id="contact">
-      <div class="footer">
-        <div class="container">
-          <div class="site-info text-center">
-            <p>
-              &copy; 2023 Nicole Orbe. Design by
-              <span id="highlight-nicole">
-                <a
-                  href="https://www.shecodes.io/graduates/80721-nicole-orbe"
-                  target="_blank"
-                  >Nicole Orbe ☕</a
-                ></span
-              >
-              and is
-              <a
-                href="https://github.com/nicoleorbe/challenge_travel_destination"
-                target="_blank"
-                >open-sourced on GitHub</a
-              >
-              and
-              <a
-                href="https://legendary-stroopwafel-595512.netlify.app/"
-                target="_blank"
-              >
-                hosted on Netlify</a
-              >
-            </p>
+    <footer class="pt-5" id="contact">
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <h2>Let's Build Something</h2>
+            </div>
+            <div class="col-sm-6">
+              <button type="submit"><a href="">Reach Out</a></button>
+            </div>
           </div>
         </div>
+        <div class="col-sm-6 text-center">
+          <ul id="menu-footer">
+            <li class="nav-item">
+              <a
+                href="https://www.linkedin.com/in/nicolesaraceniorbe/"
+                target="_blank"
+                ><i class="fab fa-linkedin" style="color: white"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.instagram.com/thenicoleorbe" target="_blank"
+                ><i class="fab fa-instagram" style="color: white"></i
+              ></a>
+            </li>
+            <li class="nav-item shecodes">
+              <a
+                class="nav-link"
+                href="https://www.shecodes.io/graduates/80721-nicole-orbe"
+                target="_blank"
+                >SheCodes</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-info text-center">
+        <p>
+          &copy; 2023 Nicole Orbe. Design by
+          <span id="highlight-nicole">
+            <a
+              href="https://www.shecodes.io/graduates/80721-nicole-orbe"
+              target="_blank"
+              >Nicole Orbe ☕</a
+            ></span
+          >
+          and is
+          <a
+            href="https://github.com/nicoleorbe/challenge_travel_destination"
+            target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a
+            href="https://legendary-stroopwafel-595512.netlify.app/"
+            target="_blank"
+          >
+            hosted on Netlify</a
+          >
+        </p>
       </div>
     </footer>
 

@@ -47,7 +47,7 @@ button {
 }
 
 .navbar-brand {
-  font-size: 28px !important;
+  font-size: 24px !important;
 }
 .navbar-nav {
   justify-content: space-between !important;
@@ -63,6 +63,10 @@ button {
 
 .navbar-toggler:focus {
   box-shadow: none !important;
+}
+
+.navbar-nav {
+  font-size: 24px;
 }
 
 .navbar a {
@@ -94,9 +98,14 @@ button {
   font-size: 20px;
 }
 
+.title {
+  font-size: 60px !important;
+}
+
 /* hero */
 .hero {
-  padding-top: 250px;
+  padding-top: 350px;
+  height: 100vh;
 }
 
 .hero h1 {
@@ -118,13 +127,12 @@ button {
 /* grid and grid cards */
 .grid {
   display: grid;
-  grid-gap: 10px;
 }
 
 .grid-cards {
   margin: 0 100px;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-gap: 50px;
 }
 .cards-header {
   padding-top: 50px;
@@ -199,7 +207,7 @@ ul {
 
 .tools,
 .tools-mobile {
-  display: inline-block;
+  display: inline-block !important;
   list-style: none;
   padding-left: 10px;
 }
@@ -226,24 +234,29 @@ ul {
 }
 
 .image-one {
-  background-image: url(images/creating-project-with-react-app.jpg);
+  background-image: url(images/laptop-one.jpg);
 }
 .image-two {
-  background-image: url(images/code-white-background.jpg);
+  background-image: url(images/laptop-two.jpg);
 }
 
 /* footer pink svg wave */
-.footer {
-  background: url(images/footer-image.svg);
+footer {
+  background-color: var(--primary);
+  /* background: url(images/footer-image.svg);
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 500px;
-  z-index: -1;
+  z-index: -1; */
 }
 
+.row {
+  --bs-gutter-x: none !important;
+}
 .site-info {
-  padding-top: 450px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   color: white;
 }
 
@@ -252,16 +265,55 @@ ul {
   text-decoration: none;
 }
 
-.site-info a:hover {
+#menu-footer li {
+  display: inline-block;
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 36px !important;
+  font-weight: 600;
+}
+
+#menu-footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+#menu-footer li:hover {
+  padding: 0 0.1em;
   background-image: linear-gradient(
     to right,
     var(--third) 0%,
     var(--third) 100%
   );
   background-repeat: no-repeat;
-  background-size: 100% 35%;
-  background-position: left 70%;
+  background-size: 100% 50%;
+  background-position: left 85%;
   box-decoration-break: clone;
+}
+
+footer button {
+  padding: 15px 30px 12px !important;
+  background-color: var(--second) !important;
+  border: none;
+  border-radius: 30px !important;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer button:hover {
+  background-color: var(--third) !important   ;
+  transition: all 200ms ease-in-out;
+}
+
+footer button a {
+  color: white;
+  text-decoration: none;
+}
+footer h2 {
+  color: white;
+}
+
+ul {
+  list-style: none;
 }
 
 /* media queries */
